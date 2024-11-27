@@ -1,0 +1,198 @@
+body{
+    background-color: #DBDDE7;
+    height: 125vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 7.78vw; /* 112px = 7.78vw */
+    font-size: 2vw; /* 29px = 2vw */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5.56vw; /* 80px = 5.56vw */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0.14vw 0.69vw rgba(0, 0, 0, 0.1); /* 2px = 0.14vw, 10px = 0.69vw */
+    z-index: 10;
+}
+
+header #Hemsida{
+    position: absolute;
+    left: 5.56vw; /* 80px = 5.56vw */
+    top: 2.22vw; /* 20px = 1.39vw */
+    font-size: 3vw; /* 24px = 1.67vw */
+    color: #497FFC;
+    width: 21.53vw; /* 311px = 21.53vw */
+    height: 1.46vw; /* 21px = 1.46vw */
+}
+
+header #Shop{
+    position: absolute;
+    left: 68.04vw; /* 979px = 68.04vw */
+    top: 2.22vw; /* 32px = 2.22vw */
+    color: #000000;
+    width: 2.71vw; /* 39px = 2.71vw */
+    height: 1.46vw; /* 21px = 1.46vw */
+}
+
+header #Web{
+    position: absolute;
+    left: 74.17vw; /* 1068px = 74.17vw */
+    top: 2.22vw; /* 32px = 2.22vw */
+    color: #000000;
+    width: 4.65vw; /* 67px = 4.65vw */
+    height: 1.46vw; /* 21px = 1.46vw */
+}
+
+header #Korg{
+    border-radius: 0.4vw;
+    position: absolute;
+    left: 84.44vw; /* 1218px = 84.44vw */
+    top: 2.22vw; /* 32px = 2.22vw */
+    background-color: #497FFC;
+    color: #FFFFFF;
+    width: 8.75vw; /* 126px = 8.75vw */
+    height: 3.33vw; /* 48px = 3.33vw */
+}
+
+#title{
+    position: absolute;
+    left: 5.56vw; /* 80px = 5.56vw */
+    top: 11.67vw; /* 168px = 11.67vw */
+    font-size: 2.22vw; /* 32px = 2.22vw */
+}
+
+#Fish{
+    position: absolute;
+    height: 31.99vw; /* 461px = 31.99vw */
+    width: 83.19vw; /* 1197px = 83.19vw */
+    left: 5.56vw; /* 80px = 5.56vw */
+    top: 18.06vw; /* 260px = 18.06vw */
+}
+
+#Collektivt{
+    display: grid;
+    position: absolute;
+    top: 54.38vw; /* 783px = 54.38vw */
+    left: 6.53vw; /* 96px = 6.67vw */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 2.22vw; /* 32px = 2.22vw */
+    grid-template-areas: 
+        "h1 h2 h3"
+        "h4 h5 h6";
+    margin-top: 4.23vw; /* 61px = 4.23vw */
+}
+
+h1, h2, h3, h4, h5, h6{
+    border-radius: 1.736vw;
+    width: 27.5vw; /* 395px = 27.5vw */
+    height: 30.83vw; /* 444px = 30.83vw */
+    background-color: #FFFFFF;
+}
+
+#bild {
+    position: relative;
+    left: 3.33vw; /* 48px = 3.33vw */
+    width: 19vw;
+}
+
+#Collektivt div {
+    position: relative;
+    left: 1.67vw; /* 24px = 1.67vw */
+}
+
+#Titel, #Kost, #Betala {
+    font-size: 1.39vw; /* 20px = 1.39vw */
+}
+
+#Knapp{
+    border-radius: 0.5vw;
+    background-color: #497FFC;
+    width: 4vw;
+    height: 2vw;
+    top: 1vw;
+}
+
+#Knapp #Betala{
+color: #FFFFFF;
+position: absolute;
+left: 0.5vw;
+}
+
+#Kost, #Beskrivning {
+    color: #497FFC;
+}
+
+#Beskrivning{
+    font-size: 1.25vw; /* 18px = 1.25vw */
+    top: 2vw; /* 42px = 2.92vw */
+}
+
+@media screen and (max-width:700px){
+    
+    #bild {
+        position: relative;
+        left: 10vw; /* 48px = 3.33vw */
+        width: 57vw;
+    }
+
+    #Beskrivning{
+        font-size: 3.75vw; /* 18px = 1.25vw */
+        top: 6vw; /* 42px = 2.92vw */
+    }
+
+    h1, h2, h3, h4, h5, h6{
+        border-radius: 1.736vw;
+        width: 82.5vw; /* 395px = 27.5vw */
+        height: 92.49vw; /* 444px = 30.83vw */
+        background-color: #FFFFFF;
+    }
+
+    #Collektivt div {
+        position: relative;
+        left: 5vw; /* 24px = 1.67vw */
+    }
+
+    #Titel, #Kost, #Betala {
+        font-size: 4.17vw; /* 20px = 1.39vw */
+    }
+    
+    #Knapp{
+        border-radius: 0.5vw;
+        background-color: #497FFC;
+        width: 12vw;
+        height: 6vw;
+        top: 3vw;
+    }
+    
+    #Knapp #Betala{
+    color: #FFFFFF;
+    position: absolute;
+    left: 1.5vw;
+    }
+
+    #Collektivt {
+        display: grid;
+    position: absolute;
+    top: 54.38vw; /* 783px = 54.38vw */
+    left: 6.53vw; /* 96px = 6.67vw */
+    grid-template-columns: 90%;
+    grid-template-rows: repeat(16%);
+    grid-gap: 2.22vw; /* 32px = 2.22vw */
+    grid-template-areas: 
+        "h1"
+        "h2"
+        "h3"
+        "h4"
+        "h5"
+        "h6";
+    margin-top: 4.23vw; /* 61px = 4.23vw */
+    }
+
+    }
