@@ -40,11 +40,10 @@ header #Shop{
     height: 1.46vw; /* 21px = 1.46vw */
 }
 
-header #Web{
+header a{
     position: absolute;
     left: 74.17vw; /* 1068px = 74.17vw */
     top: 2.22vw; /* 32px = 2.22vw */
-    color: #000000;
     width: 4.65vw; /* 67px = 4.65vw */
     height: 1.46vw; /* 21px = 1.46vw */
 }
